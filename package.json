@@ -2,8 +2,10 @@
   "name": "breakable-toy-final",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "@rails/webpacker": "3.5",
     "babel-preset-react": "~6.24.1",
+    "foundation-sites": "^6.6.1",
     "prop-types": "~15.6.0",
     "react": "~15.4.2",
     "react-dom": "~15.4.2",
