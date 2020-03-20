@@ -1,5 +1,5 @@
 class Court < ApplicationRecord
-  # mount_uploader :court_photo, CourtPhotoUpoader
+  mount_uploader :court_photo, PictureUploader
 
   validates :name, presence: true
   validates :street, presence: true

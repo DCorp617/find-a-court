@@ -1,17 +1,18 @@
-<div class="center">
-  <ul class="wrapper">
+<div>
+  <ul class="app">
     <% @courts.each do |court| %>
-      <a href="/courts/<%= court.id %>">
-        <div class="card-panel hoverable">
-          <div class="container">
-            <%= court.name %>
+      <li>
+        <a href="/courts/<%= court.id %>">
+          <div class="card-panel hoverable">
+            <div class="container">
+              <%= court.name %>
+            </div>
+            <div class="image">
+              <%= image_tag court.court_photo.url.to_s %>
+            </div>
           </div>
-          <div class="image">
-            <%= image_tag court.court_photo.url.to_s %>
-          </div>
-        </div>
-      </a>
+        </a>
+      </li>
     <% end %>
   </ul>
-
 </div>
