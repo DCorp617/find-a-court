@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   namespace :api do
-    namespace :vi do
+    namespace :v1 do
       resources :courts, only: [:index, :show]
     end
   end

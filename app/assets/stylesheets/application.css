@@ -59,6 +59,15 @@
 
 .container {
   display: block;
-  font-weight: bold;
+  text-align: center;
   font-size: 17px;
+}
+
+.court-form {
+  font-weight: bold;
+}
+
+.court-name {
+  text-align: center;
+  font-weight: bold;
 }

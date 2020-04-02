@@ -31,18 +31,30 @@ class CourtShowContainer extends Component{
         this.setState({
           courtObject: courtData
         })
-        debugger
       })
       .catch(error => console.error(`Error in fetch  ${error.message}`));
   }
 
   render(){
-    debugger
     return(
-      <div>
-        <h1>{this.state.courtObject.court.name}</h1>
-
-      </div>
+      <section className="container">
+        <div className="row">
+          <div className="columns large-12">
+            <h1 className="court-name">{this.state.courtObject.court.name}</h1>
+          </div>
+        </div>
+        <div className="row">
+          <div className="columns small-6">
+            <h3>{this.state.courtObject.court.street}</h3>
+          </div>
+          <div className="columns small-6">
+            <h3>
+              {this.state.courtObject.court.city},
+              {this.state.courtObject.court.state}
+            </h3>
+          </div>
+        </div>
+      </section>
     )
   }
 }

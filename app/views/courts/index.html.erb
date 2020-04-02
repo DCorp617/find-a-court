@@ -1,18 +1,23 @@
-<div>
-  <ul class="app">
-    <% @courts.each do |court| %>
-      <li>
-        <a href="/courts/<%= court.id %>">
-          <div class="card-panel hoverable">
-            <div class="container">
-              <%= court.name %>
-            </div>
-            <div class="image">
-              <%= image_tag court.court_photo.url.to_s %>
-            </div>
+<section class="container">
+  <div class="row">
+    <ul className="app">
+      <% @courts.each do |court| %>
+          <div class="column medium-4">
+            <a href="/courts/<%= court.id %>">
+              <div class="card-panel hoverable">
+                <div class="container">
+                  <%= court.name %>
+                </div>
+                <div class="image">
+                  <%= image_tag court.court_photo.url.to_s %>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-      </li>
-    <% end %>
-  </ul>
-</div>
+      <% end %>
+      <div className="add">
+        <h3 class="button secondary"><%= link_to "Add a Court", new_court_path %></h3>
+      </div>
+    </ul>
+  </div>
+</section>
