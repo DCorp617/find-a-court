@@ -17,8 +17,57 @@
  */
 
 .app-intro {
+  background: url("izuddin-helmi-adnan-UQpTP-KqYRk-unsplash.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #FCB600;
+
+  grid-template-rows: 100px 100px  100px;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 5px;
+}
+
+.card-panel.hoverable {
+  height: 198.89px;
+  min-width: 200px;
+  margin: 5px;
+  border-radius: 15px;
+  transition: 1s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-panel.hoverable:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .5s ease;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+}
+
+.court-form {
+  font-weight: bold;
+}
+
+.court-name {
+  text-align: center;
+  font-weight: bold;
 }

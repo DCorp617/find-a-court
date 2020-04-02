@@ -24,12 +24,12 @@ class HomeIndexContainer extends Component {
                 <i className="fa fa-users fa-5x"></i>
             </div>
           </div>
-        </section>
-        <div className="row align-center">
-          <div className="column center">
-            <a href="index.html" className="button primary">Find Courts Near You</a>
+          <div className="row align-center">
+            <div className="columns text-center">
+              <a href="index.html" className="button primary">Find Courts Near You</a>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     )
   }

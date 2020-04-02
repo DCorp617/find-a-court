@@ -1,0 +1,56 @@
+<section class="container">
+  <div class="row">
+    <h1 className="court-name">Add New Court</h1>
+  </div>
+  <div class="row">
+    <div class="column medium-6 right">
+      <%= link_to "Back", courts_path %>
+    </div>
+  </div>
+  <div class="row">
+    <form>
+      <div class="grid-x grid-padding-x">
+        <%= form_for(@court) do |f| %>
+        <div class="small-3 cell">
+          <label for="right-label"  class="text-right"><%= f.label :name %><label>
+        </div>
+        <div class="small-9 cell">
+          <input type="text" id="right-label" placeholder="Court Name"<%= f.text_field :name %>
+        </div>
+        <div class="small-3 cell">
+          <label for="right-label"  class="text-right"><%= f.label :street %><label>
+        </div>
+        <div class="small-9 cell">
+          <input type="text" id="right-label" placeholder="Street"<%= f.text_field :street %>
+        </div>
+        <div class="small-3 cell">
+          <label for="right-label"  class="text-right"><%= f.label :city %><label>
+        </div>
+        <div class="small-9 cell">
+          <input type="text" id="right-label" placeholder="City"<%= f.text_field :city %>
+        </div>
+        <div class="small-3 cell">
+          <label for="right-label"  class="text-right"><%= f.label :state %><label>
+        </div>
+        <div class="small-9 cell">
+          <input type="text" id="right-label" placeholder="State"<%= f.text_field :state %>
+        </div>
+        <div class="small-3 cell">
+          <label for="right-label"  class="text-right"><%= f.label :country %><label>
+        </div>
+        <div class="small-9 cell">
+          <input type="text" id="right-label" placeholder="Country"<%= f.text_field :country %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column small-6 large-centered">
+          <%= f.file_field :court_photo %>
+        </div>
+      </div>
+      <div className="submit">
+        <%= f.submit "Add Court" %>
+      </div>
+      <% end %>
+    </form>
+  </div>
+</section>
